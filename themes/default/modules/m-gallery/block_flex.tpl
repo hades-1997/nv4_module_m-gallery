@@ -35,7 +35,7 @@
 			keyPress: false,
 			controls: false,
 			pager: false,
-			item:{DATAGALLERY.items}
+			item:{DATAGALLERY.items},
 			responsive : [
 				{
 					breakpoint:800,
