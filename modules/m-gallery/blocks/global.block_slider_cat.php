@@ -171,12 +171,12 @@ if( ! nv_function_exists( 'nv_block_mslider' ) )
 				$block_theme = 'default';
 			}
 			
-			//var_dump($module_config["m-gallery"]);die;
+		//	var_dump( );die;
 			$xtpl = new XTemplate( $block_tpl . '.tpl', NV_ROOTDIR . '/themes/' . $block_theme . '/modules/' . $site_mods[$module]['module_file'] );
 			$xtpl->assign( 'TEMPLATE', $block_theme );
 			//$xtpl->assign( 'BLOCKID', $blockID );
 			$xtpl->assign( 'MODULEINFO',$site_mods[$module]['module_file'] );
-			$xtpl->assign( 'DATAGALLERY',  $module_config["m-gallery"] );
+			$xtpl->assign( 'DATAGALLERY',  $module_config[$module] );
             $count = 1;
 			foreach( $list as $l )
 			{
